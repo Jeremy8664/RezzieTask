@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  margin-right: 0px;
 }
 
 body {
@@ -72,9 +73,14 @@ header {
   display: flex;
   align-items:center; 
   justify-content:space-between;
-  margin-left: 220px;
+  margin-left: 350px;
   text-align: center;
-
+}
+@media only screen and (max-width: 768px) {
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .button {
@@ -137,13 +143,18 @@ header p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 60px;
+    padding: 100px;
 }
 .project-container {
     display: flex; 
     justify-content: space-around;
 }
-
+@media only screen and (max-width: 768px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .Project-Image {
     width: 80px;
     border-radius: 10px;
@@ -151,7 +162,7 @@ header p {
 
 .Affiliates {
 width: 242px;
-height: 140px;
+height: 100px;
 }
 
 .Affiliates-container {
@@ -175,12 +186,19 @@ height: 140px;
   #stepsContainer {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25px;
+    margin-left: 40px;
   }
 }
 
 .stepsBox {
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 80px;
 }
 
 .claimSteps {
@@ -191,7 +209,6 @@ height: 140px;
   color: #ffffff;
   text-align: center;
 }
-
 
 .claimStepNumber {
   font-size: 22px;
