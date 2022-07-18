@@ -65,21 +65,35 @@ nav ul {
 .header-container {
   display: flex;
   background: #fffffa ;
-  height: 250px;
+  height: 300px;
   align-items: center;
 }
 
 header {
   display: flex;
-  align-items:center; 
+  align-items: center; 
   justify-content:space-between;
-  margin-left: 350px;
+  margin-left: 300px;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .header-container {
     display: flex;
     flex-wrap: wrap;
+  }
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px;
+    text-align: left;
+    width: 350px;
+  }
+  header {
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    margin-left: 10%;
+    text-align: center;
   }
 }
 
@@ -125,7 +139,7 @@ header {
 header h1 {
   text-align: center;
   font-size: 30px;
-  line-height: 75px;
+  line-height: 70px;
   color: #021718;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -159,7 +173,10 @@ header p {
     width: 80px;
     border-radius: 10px;
 }
-
+.chat-Image {
+  width: 50px;
+  border-radius: 10px;
+}
 .Affiliates {
 width: 242px;
 height: 100px;
@@ -169,7 +186,6 @@ height: 100px;
   display:grid;
   justify-content: center;
   grid-template-columns: 300px 300px 300px;
-  
 }
 @media only screen and (max-width: 768px) {
   .Affiliates-container {
@@ -189,7 +205,6 @@ height: 100px;
     margin-left: 40px;
   }
 }
-
 .stepsBox {
   /* padding-bottom: 60px; */
   display: flex;
